@@ -309,3 +309,21 @@ textarea {
 .location i {
   margin-right: 10px;
 }
+
+.goBack {
+  font-family: 'Quicksand', sans-serif;
+  width: 100%;
+  background:#d7c9ec86;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+.goBack:hover { background:#6fca42; 
+}
