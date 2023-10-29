@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST['Email'])) {
+if ($_SERVER["REQUEST_METHOD"] =="POST") {
 
     // EDIT THE FOLLOWING TWO LINES:
     $email_to = "webmaster@innervision.ie";
