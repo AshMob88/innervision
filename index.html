@@ -1,320 +1,482 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Innervision Ultrasound - 3D ultrasound Castlebar</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
-<!-- <script async src="https://kit.fontawesome.com/6cc05e1e8e.js" crossorigin="anonymous"></script> -->
-<script async src="https://kit.fontawesome.com/63981e45fa.js" crossorigin="anonymous"></script>
-<script defer src="script.js"></script>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Innervision Ultrasound - 3D ultrasound Castlebar</title>
+    <meta name="description" content="At Innervision we offer a range of pregnancy scans, from early pregnancy scans to 4D scans. See you baby's face, hands, feet and watch him or her move within the womb. We will record this on DVD for you to bring home and enjoy with family and friends."/>
+    <meta name="Keywords" content="3D ultrasound, 3 d, 4 d, 4D ultrasound, 2D ultrasound, ultra sound, ultra-sound, baby, babies, pregnancy, pregnant, 3D baby scans, 4D baby scans, sonogram, sonogropher, sonographer, sonography, baby photo, early pregnancy scans, castlebar, galway, sligo, roscommon, donegal, longford, dublin, west of ireland, mayo, claremorris, leitrim, ireland, westport, helen mobasser, helen mombasser, ali mobasser, ali mombasser, Innervision, inner vision, vision, inner, inner ultrasound, ultrasound, ultrasounf, clinic, baby clinic, pregnancy clinic, foetal scans, fetal scans, skan, 3D sonogram, mombasser, diagnostic, cheap, cheap scan, best value scan, value, aviva, glohealth, glo health, downs, nuchal, nuckal, nuckel, obstetric, gynae, gynee, doctor, midwife, maternity, ante natal, peri natal, perinatal, antenatal, hospital, quality, best, gender, sex, wellbeing, health, boy, girl, weeks, obgyn, edwards, edward's, miscarriage, miscarry, bleed, appearance, likeness, ectopic, cyst, ovary, ovaries, pain, blood loss, screening, appointment, booking, book, private, optimum" />    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <script async src="https://kit.fontawesome.com/63981e45fa.js" crossorigin="anonymous"></script>
+    <script defer src="./script.js"></script>
 
-<body>
+        <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+        <script type="text/javascript">
+            window.cookieconsent_options = {"message":"This website uses cookies. To read our Cookie Policy please","dismiss":"Got it!","learnMore":"click here.","link":"http://innervision.ie/privacy.html","theme":"dark-bottom"};
+        </script>
 
-<button class="tablink" onclick="openPage('Home', this, '#48cae486')"id="defaultOpen">Home</button>
-<button class="tablink" onclick="openPage('what-we-do', this, '#6830c386')">What We Do</button>
-<button class="tablink" onclick="openPage('Gallery', this, '#ffafcc88')">Gallery</button>
-<button class="tablink" onclick="openPage('FAQ', this, '#ffc40086')">FAQ</button>
-<button class="tablink" onclick="openPage('Contact', this, '#55a63088')">Contact</button>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+        <!-- End Cookie Consent plugin -->
+  </head>
 
-<div id="Home" class="tabcontent">
-    <header>
-      <div class="header-wrap">
-      <h1>Innervision Ultrasound</h1>
-      <h2>3D pregnancy ultrasound scans in Mayo</h2>
+  <body>
+
+    <button class="tablink desktop" onclick="openPage('Home', this, '#48cae486')"id="defaultOpen">Home</button>
+    <button class="tablink mobile" onclick="openPage('Home', this, '#48cae486')"id="defaultOpen"><i class="fa fa-fw fa-home"></i></button>
+    <button class="tablink wwd" onclick="openPage('what-we-do', this, '#6830c386')">What We Do</button>
+    <button class="tablink other" onclick="openPage('Gallery', this, '#ffafcc88')">Gallery</button>
+    <button class="tablink other" onclick="openPage('FAQ', this, '#ffc40086')">FAQ</button>
+    <button class="tablink other" onclick="openPage('Contact', this, '#55a63088')">Contact</button>
+
+    <div id="Home" class="tabcontent">
+      <header>
+        <div class="header-wrap">
+          <h1>Innervision Ultrasound</h1>
+          <h2>3D pregnancy ultrasound scans in Mayo</h2>
+        </div>
+        <div class="header-labels small">
+          <ul class="fa-ul">
+            <li><div class="aaaa"><a href="#locationAnchor" class="header-links" onclick="openPage('Contact', this)"><i class="fa-solid fa-location-dot"></i><p>Castlebar<br>Co. Mayo</p></a></div></li>
+            <li><div class="aaaa"><i class="fa-regular fa-clock"></i><p>Tues and Sat</p></div></li>
+            <li><div class="aaaa"><i class="fa-solid fa-phone"></i><p><a href="tel:094.9060677" class="header-links">094 90 60 677</a></p></div></li>
+            <li><div class="aaaa"><i class="fa-solid fa-envelope"></i><p><a href="mailto:infor@innervision.ie" class="header-links">info@<br>innervision.ie</a></p></div></li>
+          </ul>
+        </div>
+        <div class="header-labels big">
+          <ul class="fa-ul">
+            <li><i class="fa-solid fa-location-dot"></i><div class="aaaa"><a href="#locationAnchor" class="header-links" onclick="openPage('Contact', this)"><h4>Location</h4><p>Castlebar<br>Co. Mayo</p></a></div></li>
+            <li><i class="fa-regular fa-clock"></i><div class="aaaa"><h4>Open</h4><p>Tues and Sat</p></div></li>
+            <li><i class="fa-solid fa-phone"></i><div class="aaaa"><a href="tel:094.9060677" class="header-links"><h4>Call Us</h4><p>094 90 60 677</p></a></div></li>
+            <li><i class="fa-solid fa-envelope"></i><div class="aaaa"><a href="mailto:infor@innervision.ie" class="header-links"><h4>Email</h4><p>info@innervision.ie</p></a></div></li>
+          </ul>
+        </div>
+          
+      </header>
+      <!-- <h2>3D pregnancy ultrasound scans in Mayo</h2> -->
+      <div class="content-wrap">
+        
+        <section class="welcome module">
+          <h3>Welcome</h3>
+          <p>At Innervision we offer a range of pregnancy scans, from early pregnancy scans to 4D scans. 
+            See you baby's face, hands, feet and watch him or her move within the womb. 
+            We will record this on DVD for you to bring home and enjoy with family and friends.</p>
+          <p>You can come for a scan at any time during pregnancy to follow your baby's progress or just for peace of mind.</p>
+        </section>
+
+        <div class="module-wrap">
+            <!-- About -->
+          <section class="about module">
+            <h3>About Us</h3>
+            <!-- <img src="./images/clinic-front.png" alt="clinic" class="pic1"> -->
+            <p>
+              <img src="./images/clinic-front.png" alt="clinic" class="pic pic1">
+              Established in 2006, Innervision Ultrasound continues to offer the best ultrasound experience for expectant parents. The clinic is located in Castlebar, County Mayo, making it easily accessible to customers from Mayo, Sligo, Galway, Donegal, Roscommon and Limerick.
+            </p>   
+          </section>
+          </div>
+          <!-- sonographer -->
+        <div class="module-wrap">
+          <section class="sonographer module">
+            <h3>About the Sonographer</h3>
+            <!-- <img src="./images/Helen-Mobasser-Innervision-Ultrasound.png" alt="helen" width="" class="pic2"> -->
+            <p>
+              <img src="./images/Helen-Mobasser-Innervision-Ultrasound.png" alt="helen" width="" class="pic pic2">
+              At Innervision, scans are performed by Helen Mobasser BSc (Nursing), Registered Midwife, HDip in Diagnostic Imaging. <br>
+              Helen qualified as a nurse and midwife in 1983 in the UK, before moving to Mayo General Hospital. She has over 30 years' experience in midwifery and perinatal care. Since 2001, 
+              she has specialised in pregnancy ultrasound in both Mayo and Dublin.
+              As well as practising in Innervision Ultrasound, Helen works in Merrion Fetal Health in Dublin with some of Ireland's leading obstetricians and fetal medicine experts.
+              If you would like to discuss your pregnancy with Helen, please email <a href="mailto:helen@innervision.ie" class="links">helen@innervision.ie</a>.
+            </p>
+            
+          </section>
+        </div>
       </div>
-      <div class="header-labels">
-        <ul class="fa-ul">
-          <li><span class="fa-li"><i class="fa-solid fa-location-dot"></i></span>Location<p>Castlebar</p><p>Co. Mayo</p></li>
-          <li><span class="fa-li"><i class="fa-regular fa-clock"></i></span>Open<p>Tues and Sat</p></li>
-          <li><span class="fa-li"><i class="fa-solid fa-phone"></i></span>Call Us <p>094 90 60 677</p></li>
-          <li><span class="fa-li"><i class="fa-solid fa-envelope"></i></span>Email<p>info@innervision.ie</p></li>
-        </ul>
+      <footer>
+        <div class="footer-wrap">
+          <div class="social ig">
+            <a href="https://instagram.com/innervisionultrasound?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img src="./images/instagram.png" width="120" alt=""/></a>
+          </div>
+          <div class="footer-links">
+            <p><span><a href="index.html" class="links">Home </a>| <a href="What we do.html" class="links">What We Do</a> | <a href="Gallery.html" class="links">Gallery</a> | <a href="FAQs.html" class="links">FAQs</a> | <a href="Contact Us.html" class="links">Contact Us</a> | <a href="privacy.html" class="links">Privacy Statement</a></span></p>
+            <p>Copyright &copy; <a href="#" class="links">Innervision Ultrasound 2015</a></p>
+          </div>
+      
+          <div class="social fb">
+            <a href="https://www.facebook.com/babyscanmayo" target="_blank"><img src="./images/facebook.png" width="120" alt=""/></a>
+            <a href="https://instagram.com/innervisionultrasound?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img src="./images/instagram.png" width="120" alt="" class="ig2"/></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="what-we-do" class="tabcontent">
+      <header>
+        <div class="header-wrap">
+          <h1>Innervision Ultrasound</h1>
+          <h2>3D pregnancy ultrasound scans in Mayo</h2>
+        </div>
+        <div class="header-labels small">
+          <ul class="fa-ul">
+            <li><div class="aaaa"><a href="#locationAnchor" class="header-links" onclick="openPage('Contact', this)"><i class="fa-solid fa-location-dot"></i><p>Castlebar<br>Co. Mayo</p></a></div></li>
+            <li><div class="aaaa"><i class="fa-regular fa-clock"></i><p>Tues and Sat</p></div></li>
+            <li><div class="aaaa"><i class="fa-solid fa-phone"></i><p><a href="tel:094.9060677" class="header-links">094 90 60 677</a></p></div></li>
+            <li><div class="aaaa"><i class="fa-solid fa-envelope"></i><p><a href="mailto:infor@innervision.ie" class="header-links">info@<br>innervision.ie</a></p></div></li>
+          </ul>
+        </div>
+        <div class="header-labels big">
+          <ul class="fa-ul">
+            <li><i class="fa-solid fa-location-dot"></i><div class="aaaa"><a href="#locationAnchor" class="header-links" onclick="openPage('Contact', this)"><h4>Location</h4><p>Castlebar<br>Co. Mayo</p></a></div></li>
+            <li><i class="fa-regular fa-clock"></i><div class="aaaa"><h4>Open</h4><p>Tues and Sat</p></div></li>
+            <li><i class="fa-solid fa-phone"></i><div class="aaaa"><a href="tel:094.9060677" class="header-links"><h4>Call Us</h4><p>094 90 60 677</p></a></div></li>
+            <li><i class="fa-solid fa-envelope"></i><div class="aaaa"><a href="mailto:infor@innervision.ie" class="header-links"><h4>Email</h4><p>info@innervision.ie</p></a></div></li>
+          </ul>
+        </div>
+      </header>
+      <div class="content-wrap">
+        <div class="module-wrap">
+          <!-- <section class="module">
+            <p>At Innervision, we offer a range of services. You can come for a scan at any stage of your pregnancy, 
+              whether you wish to track your baby's growth and progress or just get peace of mind about your baby's wellbeing. 
+              Please see our range of scans below.</p>
+          </section> -->
+          <section class="module not-home">
+        
+            <article class="scan-info">
+              <h3>2D scans</h3>
+              <p><img src="./images/2d300.png" alt="2d" width="" class="pic pic3">
+                We offer a range of 2D scans which can be performed at any stage of your pregnancy. 
+                They last 15 - 20 minutes and include photos of your baby.</p>
+                <h5><em>Early pregnancy scans</em></h5>
+                <p>Can be performed from 7 weeks.</p>
+                <h5><em>Gender scans</em></h5> 
+                <p>Gender determination can be performed from 16 weeks. 
+                <h5><em>General wellbeing scans</em></h5>
+                <p>A general wellbeing scan may be performed at any stage.</p>
+                
+                </p>
+            </article>
+            <article>
+              <h3>3D scans</h3>
+              <p>A 3D scan has the dimension of depth, giving superior and more realistic character to the image and enabling parents to see what their baby looks like. 
+                Facial expressions can sometimes be captured such as a smile or a frown. 4D enables you to see 3D imaging live. 
+                You can watch a live video of your baby from within the womb, watching his or her movements and expressions. 
+                The scan lasts 30 - 40 minutes and includes colour photos plus a personalised DVD recording of your baby.</p>
+            </article>
+            <article>
+              <h3>Pricing</h3>
+              <p>Gender Scan - <b>€100</b></p>
+              <p>2D Scan - <b>€120</b></p>
+              <p>3D Scan - <b>€175</b></p>
+            </article>
+          </section>
+        </div>
+        
       </div>
-    </header>
-    <!-- <h2>3D pregnancy ultrasound scans in Mayo</h2> -->
-  <div class="content-wrap">
-    <div class="module-wrap">
-      <section class="welcome module">
-        <h3>Welcome</h3>
-        <p>At Innervision we offer a range of pregnancy scans, from early pregnancy scans to 4D scans. See you baby's face, hands, feet and watch him or her move within the womb. We will record this on DVD for you to bring home and enjoy with family and friends.</p>
-        <p>You can come for a scan at any time during pregnancy to follow your baby's progress or just for peace of mind.</p>
-      </section>
+      <footer>
+        <div class="footer-wrap">
+          <div class="social ig">
+            <a href="https://instagram.com/innervisionultrasound?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img src="./images/instagram.png" width="120" alt=""/></a>
+          </div>
+          <div class="footer-links">
+            <p><span><a href="index.html" class="links">Home </a>| <a href="What we do.html" class="links">What We Do</a> | <a href="Gallery.html" class="links">Gallery</a> | <a href="FAQs.html" class="links">FAQs</a> | <a href="Contact Us.html" class="links">Contact Us</a> | <a href="privacy.html" class="links">Privacy Statement</a></span></p>
+            <p>Copyright &copy; <a href="#" class="links">Innervision Ultrasound 2015</a></p>
+          </div>
+      
+          <div class="social fb">
+            <a href="https://www.facebook.com/babyscanmayo" target="_blank"><img src="./images/facebook.png" width="120" alt=""/></a>
+            <a href="https://instagram.com/innervisionultrasound?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img src="./images/instagram.png" width="120" alt="" class="ig2"/></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="Gallery" class="tabcontent">
+      <header>
+        <div class="header-wrap">
+        <h1>Innervision Ultrasound</h1>
+        <h2>3D pregnancy ultrasound scans in Mayo</h2>
+        </div>
+        <div class="header-labels small">
+          <ul class="fa-ul">
+            <li><div class="aaaa"><a href="#locationAnchor" class="header-links" onclick="openPage('Contact', this)"><i class="fa-solid fa-location-dot"></i><p>Castlebar<br>Co. Mayo</p></a></div></li>
+            <li><div class="aaaa"><i class="fa-regular fa-clock"></i><p>Tues and Sat</p></div></li>
+            <li><div class="aaaa"><i class="fa-solid fa-phone"></i><p><a href="tel:094.9060677" class="header-links">094 90 60 677</a></p></div></li>
+            <li><div class="aaaa"><i class="fa-solid fa-envelope"></i><p><a href="mailto:infor@innervision.ie" class="header-links">info@<br>innervision.ie</a></p></div></li>
+          </ul>
+        </div>
+        <div class="header-labels big">
+          <ul class="fa-ul">
+            <li><i class="fa-solid fa-location-dot"></i><div class="aaaa"><a href="#locationAnchor" class="header-links" onclick="openPage('Contact', this)"><h4>Location</h4><p>Castlebar<br>Co. Mayo</p></a></div></li>
+            <li><i class="fa-regular fa-clock"></i><div class="aaaa"><h4>Open</h4><p>Tues and Sat</p></div></li>
+            <li><i class="fa-solid fa-phone"></i><div class="aaaa"><a href="tel:094.9060677" class="header-links"><h4>Call Us</h4><p>094 90 60 677</p></a></div></li>
+            <li><i class="fa-solid fa-envelope"></i><div class="aaaa"><a href="mailto:infor@innervision.ie" class="header-links"><h4>Email</h4><p>info@innervision.ie</p></a></div></li>
+          </ul>
+        </div>
+      </header>
+      <div class="main">
+        <div class="gallery">
+          <div class="gallery-item">
+            <img src="./images/3d-baby01.jpg">
+          </div>
+          <div class="gallery-item">
+            <img src="./images/3d-baby02.jpg" >
+          </div>
+          <div class="gallery-item">
+            <img src="./images/3d-baby03.jpg" >
+          </div>
+          <div class="gallery-item">
+            <img src="./images/3d-baby04.jpg" >
+          </div>
+          <div class="gallery-item">
+            <img src="./images/3d-baby05.jpg" >
+          </div>
+          <div class="gallery-item">
+            <img src="./images/3d-baby06.jpg" >
+          </div>
+          <div class="gallery-item">
+            <img src="./images/3d-baby07.jpg" >
+          </div>
+          <div class="gallery-item">
+            <img src="./images/3d-baby08.jpg">
+          </div>
+          <div class="gallery-item">
+            <img src="./images/3d-baby09.jpg" >
+          </div>
+          <div class="gallery-item">
+            <img src="./images/3d-baby10.jpg" >
+          </div>
+          <div class="gallery-item">
+            <img src="./images/3d-baby11.jpg" >
+          </div>
+          <div class="gallery-item">
+            <img src="./images/3d-baby12.jpg" >
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-wrap">
+          <div class="social ig">
+            <a href="https://instagram.com/innervisionultrasound?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img src="./images/instagram.png" width="120" alt=""/></a>
+          </div>
+          <div class="footer-links">
+            <p><span><a href="index.html" class="links">Home </a>| <a href="What we do.html" class="links">What We Do</a> | <a href="Gallery.html" class="links">Gallery</a> | <a href="FAQs.html" class="links">FAQs</a> | <a href="Contact Us.html" class="links">Contact Us</a> | <a href="privacy.html" class="links">Privacy Statement</a></span></p>
+            <p>Copyright &copy; <a href="#" class="links">Innervision Ultrasound 2015</a></p>
+          </div>
+      
+          <div class="social fb">
+            <a href="https://www.facebook.com/babyscanmayo" target="_blank"><img src="./images/facebook.png" width="120" alt=""/></a>
+            <a href="https://instagram.com/innervisionultrasound?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img src="./images/instagram.png" width="120" alt="" class="ig2"/></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="FAQ" class="tabcontent">
+      <header>
+        <div class="header-wrap">
+        <h1>Innervision Ultrasound</h1>
+        <h2>3D pregnancy ultrasound scans in Mayo</h2>
+        </div>
+        <div class="header-labels small">
+          <ul class="fa-ul">
+            <li><div class="aaaa"><a href="#locationAnchor" class="header-links" onclick="openPage('Contact', this)"><i class="fa-solid fa-location-dot"></i><p>Castlebar<br>Co. Mayo</p></a></div></li>
+            <li><div class="aaaa"><i class="fa-regular fa-clock"></i><p>Tues and Sat</p></div></li>
+            <li><div class="aaaa"><i class="fa-solid fa-phone"></i><p><a href="tel:094.9060677" class="header-links">094 90 60 677</a></p></div></li>
+            <li><div class="aaaa"><i class="fa-solid fa-envelope"></i><p><a href="mailto:infor@innervision.ie" class="header-links">info@<br>innervision.ie</a></p></div></li>
+          </ul>
+        </div>
+        <div class="header-labels big">
+          <ul class="fa-ul">
+            <li><i class="fa-solid fa-location-dot"></i><div class="aaaa"><a href="#locationAnchor" class="header-links" onclick="openPage('Contact', this)"><h4>Location</h4><p>Castlebar<br>Co. Mayo</p></a></div></li>
+            <li><i class="fa-regular fa-clock"></i><div class="aaaa"><h4>Open</h4><p>Tues and Sat</p></div></li>
+            <li><i class="fa-solid fa-phone"></i><div class="aaaa"><a href="tel:094.9060677" class="header-links"><h4>Call Us</h4><p>094 90 60 677</p></a></div></li>
+            <li><i class="fa-solid fa-envelope"></i><div class="aaaa"><a href="mailto:infor@innervision.ie" class="header-links"><h4>Email</h4><p>info@innervision.ie</p></a></div></li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="content-wrap">
+        <div class="module-wrap">
+          <section class="module not-home">
+            <article>
+            <h3>Is it safe?</h3>
+            <p>Ultrasound has been used in obstetrics for over 30 years. It uses high frequency sound waves which 
+              are outside the range of human hearing. Many studies have been carried out to determine the safety 
+              of fetal ultrasound and none have proven it to be of any harm to either mother or baby.
+              The British Medical Ultrasound Society regularly reviews and provides updates on the safety of ultrasound.
+              3D / 4D scans use the same high frequency technology as 2D scans.
+              At Innervision, all scans are performed by our qualified sonographer with extensive experience in ultrasound imaging and perinatal care.</p>
+            </article>
+            <article>
+              <h3>How do 3D / 4D scans differ from my usual hospital scan?</h3>
+              <p>The hospital where you receive your antenatal care offer a 2D scan which is intended to provide the 
+                obstetricians with diagnostics information about the health of your baby.
+                A 3D / 4D scan, however, has the dimension of depth, giving superior and more realistic character to the image. 
+                This enables parents to see what their baby looks like. A 4D scan is not intended to replace your hospital scan or provide 
+                diagnostic information but to enhance the parental experience. 
+                If a potential problem is seen during your scan you will be advised to consult your doctor / hospital.</p>
+            </article>
+            <article>
+              <h3>When is the best time for a scan?</h3>
+              <p>2D scans can be carried out at any time. Gender can be determined accurately from 16 weeks.
+                The best time for a 3D / 4D scan is 23 - 34 weeks, although scans can be very good even before or after this.</p>
+            </article>
+            <article>
+              <h3>Will the scan guarantee perfect images?</h3>
+              <p>In the majority of cases the image quality is excellent. However, there are times when the quality is lessened due to the position of the baby. 
+                The baby may be facing the wrong way or may be too close to the wall of the womb. The baby's face may also be obscured by hands, feet or the umbilical cord.
+                While we make every effort to produce high quality recordings of the session, if clear images are not obtained,
+                we will offer you a follow up scan at no extra cost.</p>
+            </article>
+            <article>
+              <h3>How much does the scan cost?</h3>
+              <p>2D Scans - <b style="font-size: large;">€120</b></p>
+              <p>3D Scan - <b style="font-size: large;">€175</b></p>
+            </article>
+            <article>
+              <h3>What is included in the cost?</h3>
+              <p>A 2D scan can be performed to determine the position of the baby, its measurements and general wellbeing.
+                Gender determination may also be determined if requested. This scan lasts 15 - 20 minutes and includes photographs of your baby.
+                A 3D / 4D will include an initial 2D scan to determine the position of your baby. This will include position, measurements, wellbeing and gender, as above. 
+                The 3D / 4D scan includes colour photographs of your baby plus a DVD recording of the session.
+                If you require any further information or would like to discuss your pregnancy with our expert sonographer, please call or email info@innervision.ie.</p>
+            </article>
+          </section>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-wrap">
+          <div class="social ig">
+            <a href="https://instagram.com/innervisionultrasound?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img src="./images/instagram.png" width="120" alt=""/></a>
+          </div>
+          <div class="footer-links">
+            <p><span><a href="index.html" class="links">Home </a>| <a href="What we do.html" class="links">What We Do</a> | <a href="Gallery.html" class="links">Gallery</a> | <a href="FAQs.html" class="links">FAQs</a> | <a href="Contact Us.html" class="links">Contact Us</a> | <a href="privacy.html" class="links">Privacy Statement</a></span></p>
+            <p>Copyright &copy; <a href="#" class="links">Innervision Ultrasound 2015</a></p>
+          </div>
+      
+          <div class="social fb">
+            <a href="https://www.facebook.com/babyscanmayo" target="_blank"><img src="./images/facebook.png" width="120" alt=""/></a>
+            <a href="https://instagram.com/innervisionultrasound?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img src="./images/instagram.png" width="120" alt="" class="ig2"/></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+      <header>
+        <div class="header-wrap">
+        <h1>Innervision Ultrasound</h1>
+        <h2>3D pregnancy ultrasound scans in Mayo</h2>
+        </div>
+        <div class="header-labels small">
+          <ul class="fa-ul">
+            <li><div class="aaaa"><i class="fa-solid fa-location-dot"></i><p>Castlebar<br>Co. Mayo</p></div></li>
+            <li><div class="aaaa"><i class="fa-regular fa-clock"></i><p>Tues and Sat</p></div></li>
+            <li><div class="aaaa"><i class="fa-solid fa-phone"></i><p><a href="tel:094.9060677" class="header-links">094 90 60 677</a></p></div></li>
+            <li><div class="aaaa"><i class="fa-solid fa-envelope"></i><p><a href="mailto:infor@innervision.ie" class="header-links">info@<br>innervision.ie</a></p></div></li>
+          </ul>
+        </div>
+        <div class="header-labels big">
+          <ul class="fa-ul">
+            <li><i class="fa-solid fa-location-dot"></i><div class="aaaa"><h4>Location</h4><p>Castlebar<br>Co. Mayo</p></div></li>
+            <li><i class="fa-regular fa-clock"></i><div class="aaaa"><h4>Open</h4><p>Tues and Sat</p></div></li>
+            <li><i class="fa-solid fa-phone"></i><div class="aaaa"><a href="tel:094.9060677" class="header-links"><h4>Call Us</h4><p>094 90 60 677</p></a></div></li>
+            <li><i class="fa-solid fa-envelope"></i><div class="aaaa"><a href="mailto:infor@innervision.ie" class="header-links"><h4>Email</h4><p>info@innervision.ie</p></a></div></li>
+          </ul>
+        </div>
+      </header>
+
     
-        <!-- About -->
-      <section class="about module">
-        <h3>About</h3>
-        <p>Established in 2006, Innervision Ultrasound continues to offer the best ultrasound experience for expectant parents. The clinic is located in Castlebar, County Mayo, making it easily accessible to customers from Mayo, Sligo, Galway, Donegal, Roscommon and Limerick.</p>
-      </section>
-    </div>
-  
-    <div class="module-wrap">
-      <!-- sonographer -->
-      <section class="sonographer module">
-        <h3>About the Sonographer</h3>
-        <p>At Innervision, scans are performed by Helen Mobasser BSc (Nursing), Registered Midwife, HDip in Diagnostic Imaging.</p>
-        <p>Helen qualified as a nurse and midwife in 1983 in the UK, before moving to Mayo General Hospital. She has over 30 years' experience in midwifery and perinatal care. Since 2001, she has specialised in pregnancy ultrasound in both Mayo and Dublin.</p>
-        <p>As well as practising in Innervision Ultrasound, Helen works in Merrion Fetal Health in Dublin with some of Ireland's leading obstetricians and fetal medicine experts.</p>
-        <p>If you would like to discuss your pregnancy with Helen, please email helen@innervision.ie.</p>
-      </section>
-    </div>
-  
-  </div>
-</div>
 
-<div id="what-we-do" class="tabcontent">
-  <header>
-    <div class="header-wrap">
-    <h1>Innervision Ultrasound</h1>
-    <h2>3D pregnancy ultrasound scans in Mayo</h2>
-    </div>
-    <div class="header-labels">
-      <ul class="fa-ul">
-        <li><span class="fa-li"><i class="fa-solid fa-location-dot"></i></span>Location<p>Castlebar</p><p>Co. Mayo</p></li>
-        <li><span class="fa-li"><i class="fa-regular fa-clock"></i></span>Open<p>Tues and Sat</p></li>
-        <li><span class="fa-li"><i class="fa-solid fa-phone"></i></span>Call Us <p>094 90 60 677</p></li>
-        <li><span class="fa-li"><i class="fa-solid fa-envelope"></i></span>Email<p>info@innervision.ie</p></li>
-      </ul>
-    </div>
-  </header>
-  <div class="content-wrap">
-    <div class="module-wrap">
-      <section class="module">
-        <p>At Innervision, we offer a range of services. You can come for a scan at any stage of your pregnancy, 
-           whether you wish to track your baby's growth and progress or just get peace of mind about your baby's wellbeing. 
-           Please see our range of scans below.</p>
-      </section>
-      <section class="module">
-        <h3>Gender Scans</h3>
-        <p>text text text text text text text text text text text text text text text text text text text text </p>
-      </section>
-    </div>
-    <div class="module-wrap">
-      <section class="module">
-        <h3>2D scans</h3>
-        <p>We offer a range of 2D scans which can be performed at any stage of your pregnancy.
-          Early pregnancy scans can be performed from 7 weeks.
-          Gender determination can be performed from 16 weeks
-          A general wellbeing scan may be performed at any stage.
-          2D scans last 15 - 20 minutes and include photos of your baby.</p>
-      </section>
-      <section class="module">
-        <h3>3D scans</h3>
-        <p>A 3D scan has the dimension of depth, giving superior and more realistic character to the image and enabling parents to see what their baby looks like. 
-           Facial expressions can sometimes be captured such as a smile or a frown. 4D enables you to see 3D imaging live. 
-           You can watch a live video of your baby from within the womb, watching his or her movements and expressions. 
-           The scan lasts 30 - 40 minutes and includes colour photos plus a personalised DVD recording of your baby.</p>
-      </section>
-    </div>
-    <div class="module-wrap">
+      <div class="content-wrap contact-page">
+        <form class="module form" method="post" action="">
+
+          <input type="text" name="honey" style="display: none; visibility: hidden;">
+
+          <label for="name"></label>
+          <input name="name" type="text" class="feedback-input" id="fullName" placeholder="Name" required />  
+          
+          
+          <label for="email"></label>
+          <input name="email" type="email" class="feedback-input" id="email" placeholder="Email" required />
+         
+
+          <label for="scanChoice">Please select the scan you would like to book:</label>
+          <select name="scan_choice" id="scanChoice" class="feedback-input">
+            <option value="no_preference">No Preference</option>
+            <option value="2D">2D Scan</option>
+            <option value="3D">3D Scan</option>
+            <option value="gender">Gender Scan</option>
+          </select>
+
+          <label for="messageBox"></label>
+          <textarea name="message" class="feedback-input" id="messageBox" placeholder="Message"></textarea>
+    
+
+          <div class="submit-button">
+            <button class="send-button" name="submit" type="submit" value="send">
+              <div class="alt-send-button">
+                <i class="fa fa-paper-plane"></i>
+                <span class="send-text">SEND</span>
+              </div>
+            </button>
+          </div>
       
-    </div>
-  </div>
-</div>
+        </form>
 
-<div id="Gallery" class="tabcontent">
-  <header>
-    <div class="header-wrap">
-    <h1>Innervision Ultrasound</h1>
-    <h2>3D pregnancy ultrasound scans in Mayo</h2>
-    </div>
-    <div class="header-labels">
-      <ul class="fa-ul">
-        <li><span class="fa-li"><i class="fa-solid fa-location-dot"></i></span>Location<p>Castlebar</p><p>Co. Mayo</p></li>
-        <li><span class="fa-li"><i class="fa-regular fa-clock"></i></span>Open<p>Tues and Sat</p></li>
-        <li><span class="fa-li"><i class="fa-solid fa-phone"></i></span>Call Us <p>094 90 60 677</p></li>
-        <li><span class="fa-li"><i class="fa-solid fa-envelope"></i></span>Email<p>info@innervision.ie</p></li>
-      </ul>
-    </div>
-  </header>
- <div class="main">
-  <div class="gallery">
-    <div class="gallery-item">
-      <img src="3d-baby01.png">
-    </div>
-    <div class="gallery-item">
-      <img src="3d-baby02.png" >
-    </div>
-    <div class="gallery-item">
-      <img src="3d-baby03.png" >
-    </div>
-    <div class="gallery-item">
-      <img src="3d-baby04.png" >
-    </div>
-    <div class="gallery-item">
-      <img src="3d-baby05.png" >
-    </div>
-    <div class="gallery-item">
-      <img src="3d-baby06.png" >
-    </div>
-    <div class="gallery-item">
-      <img src="3d-baby07.png" >
-    </div>
-    <div class="gallery-item">
-      <img src="3d-baby08.png">
-    </div>
-    <div class="gallery-item">
-      <img src="3d-baby09.png" >
-    </div>
-  </div>
- </div>
-</div>
 
-<div id="FAQ" class="tabcontent">
-  <header>
-    <div class="header-wrap">
-    <h1>Innervision Ultrasound</h1>
-    <h2>3D pregnancy ultrasound scans in Mayo</h2>
-    </div>
-    <div class="header-labels">
-      <ul class="fa-ul">
-        <li><span class="fa-li"><i class="fa-solid fa-location-dot"></i></span>Location<p>Castlebar</p><p>Co. Mayo</p></li>
-        <li><span class="fa-li"><i class="fa-regular fa-clock"></i></span>Open<p>Tues and Sat</p></li>
-        <li><span class="fa-li"><i class="fa-solid fa-phone"></i></span>Call Us <p>094 90 60 677</p></li>
-        <li><span class="fa-li"><i class="fa-solid fa-envelope"></i></span>Email<p>info@innervision.ie</p></li>
-      </ul>
-    </div>
-  </header>
+        <div class="module location" id="locationAnchor">
+          <p><i class="fa-solid fa-location-dot"></i>Riverside, Newport road, Castlebar, Mayo</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2353.1441696056736!2d-9.30710372294147!3d53.858084272442206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48595d768c10d79f%3A0xfe257b354ba7553d!2sInnervision%20Ultrasound!5e0!3m2!1sen!2sie!4v1696608969601!5m2!1sen!2sie" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
 
-  <div class="content-wrap">
-    <div class="module-wrap">
-      <section class="module faq-page">
-        <article>
-        <h3>Is it safe?</h3>
-        <p>Ultrasound has been used in obstetrics for over 30 years. It uses high frequency sound waves which 
-          are outside the range of human hearing. Many studies have been carried out to determine the safety 
-          of fetal ultrasound and none have proven it to be of any harm to either mother or baby.
-          The British Medical Ultrasound Society regularly reviews and provides updates on the safety of ultrasound.
-          3D / 4D scans use the same high frequency technology as 2D scans.
-          At Innervision, all scans are performed by our qualified sonographer with extensive experience in ultrasound imaging and perinatal care.</p>
-        </article>
-        <article>
-          <h3>How do 3D / 4D scans differ from my usual hospital scan?</h3>
-          <p>The hospital where you receive your antenatal care offer a 2D scan which is intended to provide the 
-            obstetricians with diagnostics information about the health of your baby.
-            A 3D / 4D scan, however, has the dimension of depth, giving superior and more realistic character to the image. 
-            This enables parents to see what their baby looks like. A 4D scan is not intended to replace your hospital scan or provide 
-            diagnostic information but to enhance the parental experience. 
-            If a potential problem is seen during your scan you will be advised to consult your doctor / hospital.</p>
-        </article>
-        <article>
-          <h3>When is the best time for a scan?</h3>
-          <p>2D scans can be carried out at any time. Gender can be determined accurately from 16 weeks.
-            The best time for a 3D / 4D scan is 23 - 34 weeks, although scans can be very good even before or after this.</p>
-        </article>
-        <article>
-          <h3>Will the scan guarantee perfect images?</h3>
-          <p>In the majority of cases the image quality is excellent. However, there are times when the quality is lessened due to the position of the baby. 
-            The baby may be facing the wrong way or may be too close to the wall of the womb. The baby's face may also be obscured by hands, feet or the umbilical cord.
-            While we make every effort to produce high quality recordings of the session, if clear images are not obtained,
-             we will offer you a follow up scan at no extra cost.</p>
-        </article>
-        <article>
-          <h3>How much does the scan cost?</h3>
-          <p>A 2D scan costs €100.
-            A 3D / 4D scan costs €175.
-            Aviva and GloHealth customers may be eligible for a contribution towards the cost of a scan. 
-            Please see www.avivahealth.ie or www.glohealth.ie for latest offers.</p>
-        </article>
-        <article>
-          <h3>What is included in the cost?</h3>
-          <p>A 2D scan can be performed to determine the position of the baby, its measurements and general wellbeing.
-             Gender determination may also be determined if requested. This scan lasts 15 - 20 minutes and includes photographs of your baby.
-            A 3D / 4D will include an initial 2D scan to determine the position of your baby. This will include position, measurements, wellbeing and gender, as above. 
-            The 3D / 4D scan includes colour photographs of your baby plus a DVD recording of the session.
-            If you require any further information or would like to discuss your pregnancy with our expert sonographer, please call or email info@innervision.ie.</p>
-        </article>
-      </section>
-    </div>
-  </div>
-</div>
-
-<div id="Contact" class="tabcontent">
-  <header>
-    <div class="header-wrap">
-    <h1>Innervision Ultrasound</h1>
-    <h2>3D pregnancy ultrasound scans in Mayo</h2>
-    </div>
-    <div class="header-labels">
-      <ul class="fa-ul">
-        <li><span class="fa-li"><i class="fa-solid fa-location-dot"></i></span>Location<p>Castlebar</p><p>Co. Mayo</p></li>
-        <li><span class="fa-li"><i class="fa-regular fa-clock"></i></span>Open<p>Tues and Sat</p></li>
-        <li><span class="fa-li"><i class="fa-solid fa-phone"></i></span>Call Us <p>094 90 60 677</p></li>
-        <li><span class="fa-li"><i class="fa-solid fa-envelope"></i></span>Email<p>info@innervision.ie</p></li>
-      </ul>
-    </div>
-  </header>
-
-  <div class="content-wrap module-wrap">
-    <form class="module form" action="https://formsubmit.co/d97c69660e38d6ecb67d8880a28f8739" method="post">
+      </div>
+      <footer>
+        <div class="footer-wrap">
+          <div class="social ig">
+            <a href="https://instagram.com/innervisionultrasound?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img src="./images/instagram.png" width="120" alt=""/></a>
+          </div>
+          <div class="footer-links">
+            <p><span><a href="index.html" class="links">Home </a>| <a href="What we do.html" class="links">What We Do</a> | <a href="Gallery.html" class="links">Gallery</a> | <a href="FAQs.html" class="links">FAQs</a> | <a href="Contact Us.html" class="links">Contact Us</a> | <a href="privacy.html" class="links">Privacy Statement</a></span></p>
+            <p>Copyright &copy; <a href="#" class="links">Innervision Ultrasound 2015</a></p>
+          </div>
       
-      <!-- HONEY -->
-      <input type="text" name="_honey" style="display: none;">
-      <!-- CAPTCHA HIDE -->
-      <input type="hidden" name="_captcha" value="false">
-
-      <!-- FORM SUBMISSION SUCCESS PAGE -->
-      <input type="hidden" name="_next" value="https://ashmob88.github.io/innervision/thanks.html">
-
-      <label for="name"></label>
-      <input name="name" type="text" class="feedback-input" id="fullName" placeholder="Name" required />  
-      
-      <label for="email"></label>
-      <input name="email" type="email" class="feedback-input" id="email" placeholder="Email" required />
-
-      <label for="scanChoice">Please select the scan you would like to book:</label>
-      <select name="scan_choice" id="scanChoice" class="feedback-input">
-        <option value="no_preference">No Preference</option>
-        <option value="2D">2D Scan</option>
-        <option value="3D">3D Scan</option>
-        <option value="gender">Gender Scan</option>
-      </select>
-
-      <label for="messageBox"></label>
-      <textarea name="text" class="feedback-input" id="messageBox" placeholder="Message"></textarea>
-
-      <input type="submit" value="Send"/>
-    </form>
-
-    <div class="module location">
-      <p><i class="fa-solid fa-location-dot"></i>Riverside, Newport road, Castlebar, Mayo</p>
-      <img src="innervision-map.png" alt="map" width="450px">
+          <div class="social fb">
+            <a href="https://www.facebook.com/babyscanmayo" target="_blank"><img src="./images/facebook.png" width="120" alt=""/></a>
+            <a href="https://instagram.com/innervisionultrasound?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img src="./images/instagram.png" width="120" alt="" class="ig2"/></a>
+          </div>
+        </div>
+      </footer>
+    
     </div>
 
-  </div>
 
- 
-</div>
+    <script>
+      function openPage(pageName,elmnt,color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+      }
 
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
 
-<script>
-function openPage(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-
-
-
-</script>
-   
-</body>
+    </script>
+    
+  </body>
 </html> 
