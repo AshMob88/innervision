@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PHMJNH2B5D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PHMJNH2B5D');
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Innervision Ultrasound - 3D ultrasound Castlebar</title>
@@ -15,6 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
     <script async src="https://kit.fontawesome.com/63981e45fa.js" crossorigin="anonymous"></script>
     <script defer src="./script.js"></script>
+    <?php include("./php/mail.php"); ?>
 
         <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
         <script type="text/javascript">
@@ -65,7 +76,7 @@
           <h3>Welcome</h3>
           <p>At Innervision we offer a range of pregnancy scans, from early pregnancy scans to 4D scans. 
             See you baby's face, hands, feet and watch him or her move within the womb. 
-            We will record this on DVD for you to bring home and enjoy with family and friends.</p>
+            We will record video clip for you to bring home and enjoy with family and friends.</p>
           <p>You can come for a scan at any time during pregnancy to follow your baby's progress or just for peace of mind.</p>
         </section>
 
@@ -150,29 +161,28 @@
             <article class="scan-info">
               <h3>2D scans</h3>
               <p><img src="./images/2d300.png" alt="2d" width="" class="pic pic3">
-                We offer a range of 2D scans which can be performed at any stage of your pregnancy. 
+                We offer a range of 2D scans which can be performed at various stages of your pregnancy. 
                 They last 15 - 20 minutes and include photos of your baby.</p>
                 <h5><em>Early pregnancy scans</em></h5>
-                <p>Can be performed from 7 weeks.</p>
+                <p>This scan can be performed from 7 weeks. It confirms the presence of a heartbeat as well as measuring the fetus to determine the age of the pregnancy .</p>
                 <h5><em>Gender scans</em></h5> 
-                <p>Gender determination can be performed from 16 weeks. 
+                <p>Gender determination can be performed from 16 weeks.</p>
                 <h5><em>General wellbeing scans</em></h5>
-                <p>A general wellbeing scan may be performed at any stage.</p>
+                <p>A general wellbeing scan may be performed at any stage to check the health and progress of the pregnancy.</p>
                 
-                </p>
+                
             </article>
             <article>
-              <h3>3D scans</h3>
+              <h3>3D/4D scans</h3>
               <p>A 3D scan has the dimension of depth, giving superior and more realistic character to the image and enabling parents to see what their baby looks like. 
                 Facial expressions can sometimes be captured such as a smile or a frown. 4D enables you to see 3D imaging live. 
                 You can watch a live video of your baby from within the womb, watching his or her movements and expressions. 
-                The scan lasts 30 - 40 minutes and includes colour photos plus a personalised DVD recording of your baby.</p>
+                The scan lasts 30 - 40 minutes and includes colour photos plus a personalised video recording of your baby that you can download to your device via a link we provide.</p>
             </article>
             <article>
               <h3>Pricing</h3>
-              <p>Gender Scan - <b>€100</b></p>
-              <p>2D Scan - <b>€120</b></p>
-              <p>3D Scan - <b>€175</b></p>
+              <p>2D Scans - <b>€120</b></p>
+              <p>3D/4D Scan - <b>€160</b></p>
             </article>
           </section>
         </div>
@@ -337,15 +347,15 @@
             <article>
               <h3>How much does the scan cost?</h3>
               <p>2D Scans - <b style="font-size: large;">€120</b></p>
-              <p>3D Scan - <b style="font-size: large;">€175</b></p>
+              <p>3D/4D Scan - <b style="font-size: large;">€160</b></p>
             </article>
             <article>
               <h3>What is included in the cost?</h3>
               <p>A 2D scan can be performed to determine the position of the baby, its measurements and general wellbeing.
                 Gender determination may also be determined if requested. This scan lasts 15 - 20 minutes and includes photographs of your baby.
                 A 3D / 4D will include an initial 2D scan to determine the position of your baby. This will include position, measurements, wellbeing and gender, as above. 
-                The 3D / 4D scan includes colour photographs of your baby plus a DVD recording of the session.
-                If you require any further information or would like to discuss your pregnancy with our expert sonographer, please call or email info@innervision.ie.</p>
+                The 3D / 4D scan includes colour photographs of your baby plus a video recording of the session.
+                If you require any further information or would like to discuss your pregnancy with our expert sonographer, please call or email <a href="mailto:info@innervision.ie" class="links">info@innervision.ie.</a></p>
             </article>
           </section>
         </div>
@@ -401,11 +411,11 @@
 
           <label for="name"></label>
           <input name="name" type="text" class="feedback-input" id="fullName" placeholder="Name" required />  
-          
+          <span class="error"></span>
           
           <label for="email"></label>
           <input name="email" type="email" class="feedback-input" id="email" placeholder="Email" required />
-         
+          <span class="error"></span>
 
           <label for="scanChoice">Please select the scan you would like to book:</label>
           <select name="scan_choice" id="scanChoice" class="feedback-input">
@@ -417,7 +427,7 @@
 
           <label for="messageBox"></label>
           <textarea name="message" class="feedback-input" id="messageBox" placeholder="Message"></textarea>
-    
+          <span class="error"></span>
 
           <div class="submit-button">
             <button class="send-button" name="submit" type="submit" value="send">
